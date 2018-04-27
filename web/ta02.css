@@ -1,0 +1,22 @@
+/* ta02.css */
+
+.div-first {
+	background-color: skyblue;
+	font-size: 2em;
+}
+
+.div-later {
+	font-size: 0.7em;
+}
+
+#div2 {
+	background-color: orange;
+}
+
+#div3 {
+	background-color: greenyellow;
+}
+
+.hover-bold:hover {
+	font-weight: bold;
+}
