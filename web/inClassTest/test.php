@@ -14,5 +14,6 @@
         print("<div id=\"div$i\">$i</div>\n");
     }
   ?>
+  <div>James Palmer</div>
 </body>
 </html>
