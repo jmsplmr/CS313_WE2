@@ -9,6 +9,8 @@
   <script src="main.js"></script>
 </head>
 <body>
-  
+  <?php
+    echo "<div>Our company is fictitious!!!</div>"
+  ?>
 </body>
 </html>
