@@ -10,6 +10,7 @@
 </head>
 <body>
   <?php
+    include header.php;
     echo "<div>Our company is fictitious!!!</div>";
   ?>
 </body>

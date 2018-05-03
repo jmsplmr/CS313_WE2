@@ -10,6 +10,7 @@
 </head>
 <body>
   <?php
+    include header.php;
     echo "<div><button type=\"button\" class=\"btn btn-large btn-block btn-default\">Log in as Administrator</button></div>";
     echo "<div><button type=\"button\" class=\"btn btn-large btn-block btn-default\">Log in as Tester</button></div>";
   ?>

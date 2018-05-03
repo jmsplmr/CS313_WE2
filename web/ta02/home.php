@@ -10,6 +10,7 @@
 </head>
 <body>
   <?php
+    include header.php;
     echo "<div>Monsters Inc.</div>";
     echo "<div>Welcome to our site</div>";
     echo "<div>You are logged in!</div>";
