@@ -11,7 +11,7 @@
 <body>
   <?php
     for ($i=0; $i < 10; $i++) { 
-        print("<div id=\"div$i\">$i</div>\n");
+        echo "<div id=\"div$i\">$i</div>\n";
     }
   ?>
   <div>James Palmer</div>

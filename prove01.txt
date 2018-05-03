@@ -1,0 +1,39 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your Heroku web application:
+
+   https://infinite-river-43265.herokuapp.com/hello.html
+
+2. Copy and paste the URL for your GitHub source code repository:
+
+   https://github.com/jmsplmr/CS313_WE2/blob/master/web/hello.html
+
+3. Briefly list and describe the elements of the application that are 
+   functioning. Include any special instructions about how to login and/or use 
+   your application.
+
+   The page displays Hello world.
+
+
+4. Briefly describe any pieces of the assignment that are not yet working 
+   correctly.
+
+   N/A
+
+5. Briefly describe the "coolest" thing you learned while completing this 
+   assignment.
+
+   I learned some more about how to automate a build process based on pushing to 
+   a remote. The remote has processes setup to build and deploy on a push to it.
+
+6. Please select the category you feel best describes your assignment: [A-E]
+   A - Some attempt was made
+   B - Developing, but significantly deficient
+   C - Slightly deficient, but still mostly adequate
+   D - Meets requirements
+JP E - Shows creativity and excels above and beyond requirements
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+
+   I was able to apply my learning and study of the tools in this lesson to help 
+   many other students in class download the tools and setup their machines.
