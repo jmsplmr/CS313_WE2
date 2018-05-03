@@ -10,7 +10,7 @@
 </head>
 <body>
   <?php
-    include $_SERVER['DOCUMENT_ROOT']."/header.php";
+    require("header.php");
     echo "<div>Our company is fictitious!!!</div>";
   ?>
 </body>
