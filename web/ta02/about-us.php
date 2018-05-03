@@ -10,7 +10,7 @@
 </head>
 <body>
   <?php
-    echo "<div>Our company is fictitious!!!</div>"
+    echo "<div>Our company is fictitious!!!</div>";
   ?>
 </body>
 </html>

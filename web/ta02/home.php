@@ -10,9 +10,9 @@
 </head>
 <body>
   <?php
-    echo "<div>Monsters Inc.</div>"
-    echo "<div>Welcome to our site</div>"
-    echo "<div>You are logged in!</div>"
+    echo "<div>Monsters Inc.</div>";
+    echo "<div>Welcome to our site</div>";
+    echo "<div>You are logged in!</div>";
   ?>
 </body>
 </html>
