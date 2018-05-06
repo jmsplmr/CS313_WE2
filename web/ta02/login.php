@@ -21,7 +21,8 @@
     if (isset($_POST['tester'])) { 
       $_session['tester'] = $_POST['tester'];
     }
-  
+    
+    bool isset ( mixed $var [, mixed $... ] )
   ?>
 </body>
 </html>
