@@ -60,6 +60,10 @@ h1 {
   background-color: darkorchid;
 }
 
+.not-active {
+  color: darkorchid;
+}
+
 .contact:hover {
   background-color: slateblue
 }
