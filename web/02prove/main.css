@@ -64,10 +64,6 @@ h1 {
   color: darkorchid;
 }
 
-.contact:hover {
-  background-color: slateblue
-}
-
 .assignment {
   display: block;
   margin-left: 15%;

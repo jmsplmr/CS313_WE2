@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 </head>
+
 <body>
   <?php
     require("header.php");
@@ -21,8 +23,7 @@
     if (isset($_POST['tester'])) { 
       $_session['tester'] = $_POST['tester'];
     }
-    
-    bool isset ( mixed $var [, mixed $... ] )
   ?>
 </body>
+
 </html>
