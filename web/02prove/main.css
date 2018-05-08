@@ -57,6 +57,7 @@ p.text {
 
 h1 {
   margin-left: 20%;
+  line-height: normal;
 }
 
 .active {
