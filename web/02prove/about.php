@@ -15,7 +15,7 @@
 
   <h1>
     <div>
-      <p>
+      <p class="text">
         Its is now my final year of school. I am studying Computer Science and I have 3 semesters until I graduate. T I have been married for 3 and half years 
         to Jessica. We have an adorable 19 month old. In December we will be welcoming another new one whose gender remains to be revealed to us. I love board 
         games, ultimate, tv, and reading. Though i have a hard time getting to fiction during school my favorite right now is Patrick Rothfuss but he needs to 
