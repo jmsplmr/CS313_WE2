@@ -20,8 +20,7 @@
         to Jessica. We have an adorable 19 month old. In December we will be welcoming another new one whose gender remains to be revealed to us. I love board 
         games, ultimate, tv, and reading. Though i have a hard time getting to fiction during school my favorite right now is Patrick Rothfuss but he needs to 
         get working on the next book in his Name of the Wind series. 
-      </p>
-      <p>
+        <br/>
         My family and I spent spring break in Logan, Utah where my wife's family now lives. It was a wonderful, much needed break. I succeeded in doing 
         nothing. We love to spend time with family.
       </p>
