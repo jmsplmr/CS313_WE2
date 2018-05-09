@@ -17,6 +17,8 @@
       "WD" => "Web Design and Development",
       "CIT" => "Computer Information Technology",
       "CE" => "Computer Engineering",
+      "BIO" => "Biology",
+      "O" => "other", 
     );
     $continents = array(
       "NA" => "North America",
