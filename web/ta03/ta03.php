@@ -17,24 +17,28 @@
     <br/>
     <label for="email">Email:</label>
     <input type="text" name="email">
+    <br/> Major:
     <br/>
-    Major:<br/>
     <?php
       $majors = array(
         "CS" => "Computer Science",
         "WD" => "Web Design and Development",
         "CIT" => "Computer Information Technology",
         "CE" => "Computer Engineering",
+        "BIO" => "Biology",
+        "O" => "other", 
       );
 
       foreach ($majors as $key => $value) {
         echo("<input type=\"radio\" name=\"major\" value=\"$key\"/>$value<br/>");
       }
     ?>
-    Comments:<br/>
-    <textarea name="comments" rows="5" columns="40"></textarea><br/>
-    Continents:<br/>
-    <?php      
+      Comments:
+      <br/>
+      <textarea name="comments" rows="5" columns="40"></textarea>
+      <br/> Continents:
+      <br/>
+      <?php      
       $continents = array(
         "NA" => "North America",
         "SA" => "South America",
@@ -53,8 +57,8 @@
 
       echo '</select>';
     ?>
-    <br/>
-    <input type="submit"/>
+      <br/>
+      <input type="submit" />
   </form>
 </body>
 
