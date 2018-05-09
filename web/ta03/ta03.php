@@ -18,14 +18,18 @@
     <label for="email">Email:</label>
     <input type="text" name="email">
     <br/>
-    <label for="major:">Major:</label>
-    <input type="radio" name="major" value="CS" />Computer Science
-    <br/>
-    <input type="radio" name="major" value="WD" />Web Design and Development
-    <br/>
-    <input type="radio" name="major" value="CIT" />CIT
-    <br/>
-    <input type="radio" name="major" value="CE" />Computer Engineering
+    Major:<br/>
+    <?php
+      $majors = array(
+        "CS" => "Computer Science",
+        "WD" => "Web Design and Development",
+        "CIT" => "Computer Information Technology",
+        "CE" => "Computer Engineering",
+      )
+      foreach ($majors as $key => $value) {
+        echo "<input type="radio" name="major" value="$key"/>$value<br/>"
+      }
+    ?>
     <label for="comments">Comments:</label>
     <textarea name="comments" rows="5" columns="40"></textarea>
     <label for="continents">Continents:</label>
