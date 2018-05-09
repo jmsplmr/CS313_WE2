@@ -5,7 +5,7 @@
 		$uri = 'http://';
 	}
 	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/cs313_php/web/02prove/home.php');
+	header('Location: '.$uri.'/02prove/home.php');
 	exit;
 ?>
 Something is wrong with the XAMPP installation :-(
