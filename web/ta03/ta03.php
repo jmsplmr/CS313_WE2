@@ -25,9 +25,10 @@
         "WD" => "Web Design and Development",
         "CIT" => "Computer Information Technology",
         "CE" => "Computer Engineering",
-      )
+      );
+
       foreach ($majors as $key => $value) {
-        echo "<input type="radio" name="major" value="$key"/>$value<br/>"
+        echo("<input type=\"radio\" name=\"major\" value=\"$key\"/>$value<br/>");
       }
     ?>
     <label for="comments">Comments:</label>
