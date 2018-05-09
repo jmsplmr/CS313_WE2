@@ -11,7 +11,23 @@
 </head>
 
 <body>
-
+  <?php
+    $majors = array(
+      "CS" => "Computer Science",
+      "WD" => "Web Design and Development",
+      "CIT" => "Computer Information Technology",
+      "CE" => "Computer Engineering",
+    );
+    $continents = array(
+      "NA" => "North America",
+      "SA" => "South America",
+      "EU" => "Europe",
+      "AS" => "Asia",
+      "AU" => "Australia",
+      "AF" => "Africa",
+      "AN" => "Antarctica",
+    );
+  ?>
   User:
   <?php echo $_POST["name"]; ?>
   <br/> Email Address is:
@@ -19,7 +35,7 @@
     <?php echo $_POST["email"];?>
   </a>
   <br/> Major:
-  <?php echo $_POST["major"]; ?>
+  <?php echo $major[$_POST["major"]]; ?>
   <br/> Comments:
   <p>
     <?php echo $_POST["comments"]; ?>
@@ -28,7 +44,7 @@
   <br/>
   <?php 
     foreach ($_POST["continents"] as $visted)
-        echo("    $visted<br>");
+        echo("    ".$continents["$visted"]."<br/>");
   ?>
 </body>
 
