@@ -35,7 +35,7 @@
     <?php echo $_POST["email"];?>
   </a>
   <br/> Major:
-  <?php echo($major[$_POST["$major"]]); ?>
+  <?php echo(" ".$major[$_POST['major']]."<br/>"); ?>
   <br/> Comments:
   <p>
     <?php echo $_POST["comments"]; ?>
