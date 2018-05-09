@@ -31,20 +31,30 @@
         echo("<input type=\"radio\" name=\"major\" value=\"$key\"/>$value<br/>");
       }
     ?>
-    <label for="comments">Comments:</label>
+    Comments:<br/>
     <textarea name="comments" rows="5" columns="40"></textarea>
-    <label for="continents">Continents:</label>
-    <select name="continents[]" size="7" multiple>
-      <option value="North America">North America</option>
-      <option value="South America">South America</option>
-      <option value="Europe">Europe</option>
-      <option value="Asia">Asia</option>
-      <option value="Australia">Australia</option>
-      <option value="Africa">Africa</option>
-      <option value="Antarctica">Antarctica</option>
-    </select>
-    <br>
-    <input type="submit">
+    Continents:<br/>
+    <?php      
+      $continents = array(
+        "NA" => "North America",
+        "SA" => "South America",
+        "EU" => "Europe",
+        "AS" => "Asia",
+        "AU" => "Australia",
+        "AF" => "Africa",
+        "AN" => "Antarctica",
+      );
+
+      echo '<select name="continents[]" size="7" multiple>';
+
+      foreach ($majors as $key => $value) {
+        echo("<option value=\"$key\">$value</option>");
+      }
+
+      echo '</select>';
+    ?>
+    <br/>
+    <input type="submit"/>
   </form>
 </body>
 
