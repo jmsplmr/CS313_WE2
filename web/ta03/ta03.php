@@ -32,7 +32,7 @@
       }
     ?>
     Comments:<br/>
-    <textarea name="comments" rows="5" columns="40"></textarea>
+    <textarea name="comments" rows="5" columns="40"></textarea><br/>
     Continents:<br/>
     <?php      
       $continents = array(
@@ -47,7 +47,7 @@
 
       echo '<select name="continents[]" size="7" multiple>';
 
-      foreach ($majors as $key => $value) {
+      foreach ($continents as $key => $value) {
         echo("<option value=\"$key\">$value</option>");
       }
 
