@@ -18,8 +18,7 @@
     <label for="email">Email:</label>
     <input type="text" name="email">
     <br/>
-    <h1>Major:</h1>
-    <br/>
+    <label for="major:">Major:</label>
     <input type="radio" name="major" value="CS" />Computer Science
     <br/>
     <input type="radio" name="major" value="WD" />Web Design and Development
@@ -27,11 +26,9 @@
     <input type="radio" name="major" value="CIT" />CIT
     <br/>
     <input type="radio" name="major" value="CE" />Computer Engineering
-    <br/> Comments
-    <br/>
+    <label for="comments">Comments:</label>
     <textarea name="comments" rows="5" columns="40"></textarea>
-    <br/> Continents Visited:
-    <br/>
+    <label for="continents">Continents:</label>
     <select name="continents[]" size="7" multiple>
       <option value="North America">North America</option>
       <option value="South America">South America</option>
