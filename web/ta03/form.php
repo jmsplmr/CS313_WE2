@@ -12,6 +12,8 @@
 
 <body>
   <?php
+    session_start();
+
     $majors = array(
       "CS" => "Computer Science",
       "WD" => "Web Design and Development",
@@ -29,6 +31,18 @@
       "AF" => "Africa",
       "AN" => "Antarctica",
     );
+
+    $_SESSION['name']= $_POST["name"];
+    $_SESSION['email'] = $_POST["email"];
+    $_SESSION['major'] = $majors[$_POST['major']];
+    $_SESSION['comments'] = $_POST["comments"];
+    $_SESSION['visited'] = $_POST["continents"];
+
+    echo $_SESSION['name'];
+    echo $_SESSION['email'];
+    echo $_SESSION['major'];
+    echo $_SESSION['comments'];
+    echo $_SESSION['visited'];
   ?>
   User:
   <?php echo $_POST["name"]; ?>
