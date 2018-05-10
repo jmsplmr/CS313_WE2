@@ -42,7 +42,8 @@
     echo $_SESSION['email'];
     echo $_SESSION['major'];
     echo $_SESSION['comments'];
-    echo $_SESSION['visited'];
+    foreach ($_SESSION['visited'] as $key => $value)
+      echo $key.$value;
   ?>
   User:
   <?php echo $_POST["name"]; ?>
