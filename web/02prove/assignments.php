@@ -18,7 +18,7 @@
       <ul>
         <li class="assignment"><a href="../hello.html">01 Prove: Hello World!</a></li>
         <li class="assignment"><a href="../02prove/home.php">02 Prove: Home Page</a></li>
-        <li class="assignment"><a href="">03 Prove: TBD</a></li>
+        <li class="assignment"><a href="../03prove/shoppingcart.php">03 Prove: Shopping Cart</a></li>
         <li class="assignment"><a href="">04 Prove: TBD</a></li>
         <li class="assignment"><a href="">05 Prove: TBD</a></li>
         <li class="assignment"><a href="">06 Prove: TBD</a></li>

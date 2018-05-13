@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
->>>>>>> c61e1d517c639b5f4b88286d9a5f4c6d61c0e8c0
 <?php
   session_start()
 ?>
@@ -15,24 +12,7 @@
   }
   header("Refresh:0");
 ?>
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
-</head>
-<body>
-  <div>
-    <h1>Page Visited: <?php echo $_SESSION[$key_sessionCount]; ?></h1>
-  </div>
-</body>
-</html>
-=======
+
 <html>
 <head>
   <meta charset="utf-8"/>
@@ -48,4 +28,4 @@
 </div>
 </body>
 </html>
->>>>>>> c61e1d517c639b5f4b88286d9a5f4c6d61c0e8c0
+

@@ -39,7 +39,7 @@
       <figcaption>Infinite Discs | P-Blend | Available: 5 | Price: $9.99 | 175g | BLACK & WHITE</figcaption>
     </figure>
     <form action='add.php' method='POST'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='MY1'>
     </form>
   </div>
@@ -49,7 +49,7 @@
       <figcaption>Infinite Discs | P-Blend | Available: 6 | Price: $9.99 | 175g | BLACK & RAINBOW</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='MY2'>
     </form>
   </div>
@@ -59,7 +59,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 2 | Price: $17.88 | 167g | WHITE TRIBAL</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='LA1'>
     </form>
   </div>
@@ -69,7 +69,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 1 | Price: $15.88 | 175g | PINK</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='LA2'>
     </form>
   </div>
@@ -79,7 +79,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 1 | Price: $15.88 | 175g | PINK</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='AR1'>
     </form>
   </div>
@@ -89,7 +89,7 @@
       <figcaption>Vibram | X-Link Firm | Available: 1 | Price: $15.88 | 170g | ORANGE</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='AR2'>
     </form>
   </div>
@@ -99,7 +99,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 1 | Price: $15.88 | 178g | GREEN</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='OB1'>
     </form>
   </div>
@@ -109,7 +109,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 1 | Price: $15.88 | 160g | ORANGE</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='OB2'>
     </form>
   </div>
@@ -119,7 +119,7 @@
       <figcaption>Vibram | X-Link Medium Glow | Available: 1 | Price: $18.99 | 175g | WHITE & BLUE</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='VA1'>
     </form>
   </div>
@@ -129,7 +129,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 1 | Price: $15.88 | 172g | BLUE</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='VA2'>
     </form>
   </div>
@@ -139,7 +139,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 1 | Price: $15.88 | 172g | WHITE</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='SU1'>
     </form>
   </div>
@@ -149,7 +149,7 @@
       <figcaption>Vibram | X-Link Medium | Available: 2 | Price: $17.99 | 171g | WHITE TRIBAL</figcaption>
     </figure>
     <form action='add.php' method='post'>
-      <input class='button' type='button' title='Add to cart' value='Add To Cart'>
+      <input class='button' type='submit' title='Add to cart' value='Add To Cart'>
       <input type='hidden' name='item' value='SU2'>
     </form>
   </div>
