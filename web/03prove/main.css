@@ -20,7 +20,7 @@ body {
   align-items: center;
   padding: 10px;
   margin: 0;
-  background-color: ste;
+  background-color: steelblue;
   width: 100%;
   height: 40px;
 }
@@ -58,7 +58,7 @@ a:hover {
   color: blue;
 }
 
-#container {
+.container {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;

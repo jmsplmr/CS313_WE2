@@ -32,7 +32,7 @@
   <a href='view-cart.php'><img src='img/Shopping-Cart-icon.png' alt='shopping cart icon' title='View cart'
                                id='cart-icon'></a>
 </div>
-<div id='container'>
+<div class='container'>
   <div>
     <figure>
       <img src='img/MY1.JPG' alt='Myth Black and White'>

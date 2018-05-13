@@ -14,9 +14,10 @@
     <a href='view-cart.php'><img src='img/Shopping-Cart-icon.png' alt='shopping cart icon' title='View cart'
                                  id='cart-icon'></a>
   </div>
-  <a href='shoppingcart.php' title='Continue browsing'>Continue Browsing</a><br>
-  <a href='checkout.php' title='Checkout'>Checkout</a>
-  <h1>Take a look at what's in your shopping cart:</h1>
+  <div class="container">
+    <a href='shoppingcart.php' title='Continue browsing'>Continue Browsing</a><br>
+    <a href='checkout.php' title='Checkout'>Checkout</a>
+    <h1>Take a look at what's in your shopping cart:</h1>
 <?php
   echo '<ul>';
   foreach ($_SESSION['quantity'] as $item => $quantity) {
@@ -33,6 +34,6 @@
     }
   }
   echo '</ul > ';
-?>
+?></div>
 </body>
 </html>

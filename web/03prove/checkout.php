@@ -13,6 +13,7 @@
   <p id='page-heading'>Checkout</p>
   <a href='view-cart.php'><img src='img/Shopping-Cart-icon.png' alt='shopping cart icon' title='View cart' id='cart-icon'></a>
 </div>
+<div class="container">
 <h1>Review your order before purchasing:</h1>
 <?php
   echo '<ul>';
@@ -28,7 +29,23 @@
   echo '</ul > ';
 ?>
 <form action='finalize_order.php' method='POST'>
-  <input class='button' type='submit' title='Finalize Order' value='Finalize Order'>
+  Shipping Address:<br>
+  <label for="name">Name:</label>
+  <input type="text" name="name" maxlength="50"><br/>
+  <label for="add1">Address Line 1:</label>
+  <input type="text" name="add1"><br/>
+  <label for="add2">Address Line 2:</label>
+  <input type="text" name="add2"><br/>
+  <label for="add3">Address Line 3:</label>
+  <input type="text" name="add3"><br/>
+  <label for="city">City:</label>
+  <input type="text" name="city">
+  <label for="state">State:</label>
+  <input type="text" name="state">
+  <label for="zip">Zipcode:</label>
+  <input type="number" name="zip" maxlength="5"><br/>
+  <input type="submit" />
 </form>
+</div>
 </body>
 </html>
