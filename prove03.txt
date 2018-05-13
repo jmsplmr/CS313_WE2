@@ -1,0 +1,40 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+
+    http://infinite-river-43265.herokuapp.com/03prove/shoppingcart.php
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+    https://github.com/jmsplmr/CS313_WE2/tree/master/web/03prove
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+
+    Session, add item, remove all of one item, fill shipping info, sanitize input.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+    For me, I enjoyed learning about redirects to return to the previous page.
+
+6. List one strength and one limitation of using cookies.
+
+    Strength: Allows persistent data across sessions.
+    Limitation: Cant rely on cookie being there
+
+7. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but significantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+    D
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    Met the requirements and tried to get a some of the above and beyond but didn't really get it to work.
