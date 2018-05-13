@@ -38,14 +38,16 @@
     $_SESSION['comments'] = $_POST["comments"];
     $_SESSION['visited'] = $_POST["continents"];
 
-    echo $_SESSION['name'];
-    echo $_SESSION['email'];
-    echo $_SESSION['major'];
-    echo $_SESSION['comments'];
+    echo $_SESSION['name']."<br>";
+    echo $_SESSION['email']."<br>";
+    echo $_SESSION['major']."<br>";
+    echo $_SESSION['comments']."<br>";
+    
     foreach ($_SESSION['visited'] as $key => $value)
-      echo $key.$value;
+      echo $value."<br>";
   ?>
-  User:
+
+  <br/> User:
   <?php echo $_POST["name"]; ?>
   <br/> Email Address is:
   <a href="mailto:<?php echo $_POST["email"];?>">
@@ -60,8 +62,8 @@
   <br/> Visited Continents:
   <br/>
   <?php 
-    foreach ($_POST["continents"] as $visted)
-        echo("    ".$continents["$visted"]."<br/>");
+    foreach ($_POST["continents"] as $visited)
+        echo("    ".$continents["$visited"]."<br/>");
   ?>
 </body>
 
