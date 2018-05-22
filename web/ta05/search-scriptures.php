@@ -15,15 +15,13 @@
 
   $book = $_POST['book'];
 
-  echo $book;
-
-  $qry = $db -> prepare('SELECT book, chapter, verse, content FROM Scriptures WHERE book=:book');
+  $qry = $db -> prepare('SELECT id, book, chapter, verse FROM Scriptures WHERE book=:book');
   $qry -> execute([':book' => $book]);
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
 
   foreach ($results as $row) {
-    echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
-    echo ' - ' . $row['content'] . '</br>';
+    echo '<a href="scripture-details.php?id='.$row['id'].'" methods="">' . $row['book'] . ' ' . $row['chapter'] . ':' .
+    $row['verse'] . '</a>';
   }
 ?>
 </body>
