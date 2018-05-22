@@ -15,13 +15,12 @@
 </head>
 <body>
 <?php
-  $qry = $db -> prepare('SELECT id, book, chapter, verse FROM Scriptures WHERE id=:id');
+  $qry = $db -> prepare('SELECT id, book, chapter, verse, content FROM Scriptures WHERE id=:id');
   $qry -> execute([':id' => $id]);
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
 
   foreach ($results as $row) {
-    echo '<a href="scripture-details.php?id='.$row['id'].'" methods="">' . $row['book'] . ' ' . $row['chapter'] . ':' .
-         $row['verse'] . '</a>';
+    echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
     echo '</br>';
     echo $row['content'];
     echo '</br>';
