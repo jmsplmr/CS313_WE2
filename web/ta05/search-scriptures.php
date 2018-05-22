@@ -22,6 +22,7 @@
   foreach ($results as $row) {
     echo '<a href="scripture-details.php?id='.$row['id'].'" methods="">' . $row['book'] . ' ' . $row['chapter'] . ':' .
     $row['verse'] . '</a>';
+    echo '</br>';
   }
 ?>
 </body>
