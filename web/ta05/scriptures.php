@@ -10,7 +10,7 @@
 </head>
 <body>
   <h1>Scripture Search</h1>
-  <form action="search-scriptures.php">
+  <form action="search-scriptures.php" method="post">
     <label for="book">Search for references by book:</label>
     <input type="search" name="book">
     <input type="submit"/>
