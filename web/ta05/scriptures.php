@@ -31,13 +31,16 @@
       // and can be very helpful in debugging! (But you would likely want
       // to disable it for production environments.)
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      
-      echo '<p>We think it is successfull</p>';
     }
     catch (PDOException $ex)
     {
       echo 'Error!: ' . $ex->getMessage();
       die();
+    }
+
+    foreach ($db-query('SELECT book, chapter, verse, content FROM Scriptures') as $row) {
+      echo '<strong>'.$row['book'].' '.$row['chapter'].':'.$row['verse'].'</strong>';
+      echo ' - '.$row['content'].'</br>';
     }
   ?>
 </body>
