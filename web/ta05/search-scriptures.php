@@ -15,6 +15,8 @@
 
   $book = $_POST['book'];
 
+  echo $book;
+
   $qry = $db -> prepare('SELECT book, chapter, verse, content FROM Scriptures WHERE book=:book');
   $qry -> execute([':book' => $book]);
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
