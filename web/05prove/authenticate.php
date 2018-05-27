@@ -26,7 +26,7 @@
 <div class="login-page">
   <div class="form">
     <?php
-      if (!$results_usr[0]) {
+      if (!$results[0]) {
         echo '<p class="message">Username or password incorrect.</p>';
         echo '</br>';
       } else {
