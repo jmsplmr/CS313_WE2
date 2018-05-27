@@ -15,7 +15,7 @@
     <input type="text" name="username" id="username">
     <label for="pswd_insecure">Password</label>
     <input type="password" name="pswd_insecure" id="pswd">
-    <input type="submit" value="">
+    <input type="submit" value="Submit">
   </form>
 </body>
 </html>
