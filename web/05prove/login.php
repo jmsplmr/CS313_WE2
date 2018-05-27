@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="login.css"/>
   <script src="login.js"></script>
-  <script src='cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
