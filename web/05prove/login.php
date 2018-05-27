@@ -14,22 +14,12 @@
 <body>
 <div class="login-page">
   <div class="form">
-    <form class="register-form" action="register.php">
-      <input type="text" name="name" id="name" placeholder="name">
-      <input type="text" name="usrname" id="usrname" placeholder="username" required/>
-      <input type="password" name="pswd" id="pswd" placeholder="password" required/>
-      <input type="text" name="email" id="email" placeholder="email address" required/>
-      <input type="submit" value="Create">
-      <p class="message">Already registered?
-        <a href="#">Sign In</a>
-      </p>
-    </form>
     <form class="login-form" action="authenticate.php" method="post">
       <input type="text" name="username" placeholder="username" id="username">
       <input type="password" name="pswd" placeholder="password" id="pswd">
       <input type="submit" value="Login">
       <p class="message">Not registered?
-        <a href="#">Create an account</a>
+        <a href="register.php">Create an account</a>
       </p>
     </form>
   </div>
