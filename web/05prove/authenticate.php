@@ -19,7 +19,8 @@
 <div class="login-page">
   <div class="form">
     <?php
-
+      echo 'Here';
+      
       $qry = $db -> prepare('SELECT users.username FROM users WHERE username=:user AND pswdhash = crypt(:pswd, pswdhash);');
       $qry -> execute([':user' => $user, ':pswd' => $pswd]);
       $results = $qry_email -> fetchAll(PDO::FETCH_ASSOC);
