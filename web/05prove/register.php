@@ -12,7 +12,7 @@
 <div class="login-page">
   <div class="form">
 
-    <form class="register-form" action="add_registration.php">
+    <form class="register-form" action="add_registration.php" method="post">
       <input type="text" name="name" id="name" placeholder="name">
       <input type="email" name="email" id="email" placeholder="email address" required/>
       <input type="text" name="usrname" id="usrname" placeholder="username" required/>
