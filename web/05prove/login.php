@@ -12,7 +12,7 @@
   <h1>Login</h1>
   <form action="authenticate.php" method="post">
     <label for="username"></label>
-    <input type="text" name="username" id="username">
+    <input type="text" name="username" id="username"><br>
     <label for="pswd_insecure">Password</label>
     <input type="password" name="pswd_insecure" id="pswd">
     <input type="submit" value="Submit">
