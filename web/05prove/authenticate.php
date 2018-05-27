@@ -24,11 +24,13 @@
       $qry -> execute([':user' => $user, ':pswd' => $pswd]);
       $results = $qry_email -> fetchAll(PDO::FETCH_ASSOC);
 
+      echo $results;
+
       if ($results[0]['username'] == $user) {
         $_SESSION['logged_in'] = TRUE;
       }
 
-      if ($results->rowCount() == 0) {
+      if (!$results) {
         echo '<p class="message">Username or password incorrect.</p>';
         echo '</br>';
       } else {
