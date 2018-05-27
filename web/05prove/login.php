@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Disc Golf | Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="login.css"/>
+  <script src="login.js"></script>
 </head>
 
 <body>
 <div class="login-page">
   <div class="form">
-    <form class="register-form">
+    <form class="register-form" action="register.php">
+      <input type="text" name="name" id="name">
       <input type="text" placeholder="name" required/>
       <input type="password" placeholder="password" required/>
       <input type="text" placeholder="email address" required/>
-      <button>create</button>
+      <input type="submit" value="Create">
       <p class="message">Already registered?
         <a href="#">Sign In</a>
       </p>
@@ -26,7 +27,9 @@
       <input type="text" name="username" placeholder="username" id="username">
       <input type="password" name="pswd_insecure" placeholder="password" id="pswd">
       <input type="submit" value="Login">
-      <p class="message">Not registered?<a href="#">Create an account</a></p>
+      <p class="message">Not registered?
+        <a href="#">Create an account</a>
+      </p>
     </form>
   </div>
 </div>
