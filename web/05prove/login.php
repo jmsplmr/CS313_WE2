@@ -11,10 +11,8 @@
 <body>
   <h1>Login</h1>
   <form action="authenticate.php" method="post">
-    <label for="username"></label>
-    <input type="text" name="username" id="username"><br>
-    <label for="pswd_insecure">Password</label>
-    <input type="password" name="pswd_insecure" id="pswd">
+    <input type="text" name="username" placeholder="username" id="username"><br>/
+    <input type="password" name="pswd_insecure" placeholder="password" id="pswd"><br>
     <input type="submit" value="Submit">
   </form>
 </body>
