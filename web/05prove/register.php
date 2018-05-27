@@ -14,8 +14,8 @@
 
     <form class="register-form" action="add_registration.php">
       <input type="text" name="name" id="name" placeholder="name">
-      <input type="text" name="usrname" id="usrname" placeholder="username" required/>
       <input type="email" name="email" id="email" placeholder="email address" required/>
+      <input type="text" name="usrname" id="usrname" placeholder="username" required/>
       <input type="password" name="pswd" id="pswd" placeholder="password" required/>
       <input type="hidden" name="registered" id="registered" value="registered"/>
       <input type="submit" value="Create">
