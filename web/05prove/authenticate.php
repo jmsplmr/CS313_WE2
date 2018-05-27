@@ -5,6 +5,14 @@
   $user = $_POST['username'];
   $pswd = $_POST['pswd'];
 
+  $qry = $db -> prepare('SELECT users.username FROM users WHERE username=:user AND pswdhash = crypt(:pswd, pswdhash);');
+  $qry -> execute([':user' => $user, ':pswd' => $pswd]);
+  $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
+  
+  if ($results) {
+    $_SESSION['logged_in'] = TRUE;
+    header('Location: home.php');
+  }
 ?>
 <html>
 <head>
@@ -19,28 +27,8 @@
 <div class="login-page">
   <div class="form">
     <?php
-      echo 'Here';
-      echo $user;
-      echo $pswd;
-
-      $qry = $db -> prepare('SELECT users.username FROM users WHERE username=:user AND pswdhash = crypt(:pswd, pswdhash);');
-      $qry -> execute([':user' => $user, ':pswd' => $pswd]);
-      $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
-
-      echo 'now here';
-      echo $results;
-
-      if ($results[0]['username'] == $user) {
-        $_SESSION['logged_in'] = TRUE;
-      }
-
-      if (!$results) {
-        echo '<p class="message">Username or password incorrect.</p>';
-        echo '</br>';
-      } else {
-        echo '<p class="message">Success: ' . $_SESSION['logged_in'] . '</p>';
-        echo '</br>';
-      }
+      echo '<p class="message">Username or password incorrect.</p>';
+      echo '</br>';
     ?>
   </div>
 </div>
