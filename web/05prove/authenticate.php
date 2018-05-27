@@ -9,9 +9,9 @@
   $qry -> execute([':user' => $user, ':pswd' => $pswd]);
   $results = $qry_email -> fetchAll(PDO::FETCH_ASSOC);
 
-  if ($results[0]['username'] == $user) {
-    $_SESSION['logged_in'] = TRUE;
-  }
+//  if ($results[0]['username'] == $user) {
+//    $_SESSION['logged_in'] = TRUE;
+//  }
 ?>
 <html>
 <head>
