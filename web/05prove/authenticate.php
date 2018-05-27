@@ -5,12 +5,12 @@
   $user = $_POST['username'];
   $pswd = $_POST['pswd'];
 
-  $qry = $db -> prepare('SELECT users.username FROM users WHERE username=:user AND pswdhash = crypt(:pswd, pswdhash);');
+  $qry = $db -> prepare('SELECT users.id, users.username FROM users WHERE username=:user AND pswdhash = crypt(:pswd, pswdhash);');
   $qry -> execute([':user' => $user, ':pswd' => $pswd]);
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
-  
+
   if ($results) {
-    $_SESSION['logged_in'] = TRUE;
+    $_SESSION['user'] = $results[0]['id'];
     header('Location: home.php');
   }
 ?>
