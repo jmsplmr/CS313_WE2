@@ -3,10 +3,18 @@
   $chapter = htmlspecialchars($_POST['chapter']);
   $verse   = htmlspecialchars($_POST['verse']);
   $content = htmlspecialchars($_POST['content']);
+  $topics = $_POST['topics'];
 
-  if (!empty($_POST['topics'])) {
-    print_r($_POST['topics']);
-    foreach ($_POST['topics'] as $topic) {
-      print_r($topic);
-    }
+  require '../db-credentials.php';
+
+  $qry_insert_scripture = $db -> prepare('INSERT INTO scriptures(book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content);');
+  $qry_insert_scripture -> execute();
+
+  $scripture_id = $db->lastInsertId('scriptures_id_seq');
+
+  foreach ($topics as $key => $topic_id) {
+    $qry_insert_topic
+        = $db -> prepare('INSERT INTO scriptures_to_topics (scripture_id, topics_id) VALUES (:scripture_id, :topic_id);');
+    $qry_insert_topic_ -> execute([':scripture_id' => $scripture_id,
+                                   ':topic_id'     => $topic_id]);
   }
