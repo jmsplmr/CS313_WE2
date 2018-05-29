@@ -9,24 +9,23 @@
   <script src="main.js"></script>
 </head>
 <body>
-  <form action="insert.php" method="post">
-  <input type="text" name="book" id="book" placeholder='Book' autofocus >
-  <input type="text" name="chapter" id="chapter" placeholder='Chapter'>
-  <input type="text" name="verse" id="verse" placeholder='Verse'>
-  <input type="textarea" name="content" id="content" placeholder='Content' rows='3'>
+  <form name='scripture' id='scripture' action="input.php" method="post"><br>
+  <input type="text" name="book" id="book" placeholder='Book' autofocus ><br>
+  <input type="text" name="chapter" id="chapter" placeholder='Chapter'><br>
+  <input type="text" name="verse" id="verse" placeholder='Verse'><br>
+  <textarea name="content" id="content" form='scripture' cols="30" rows="10" placeholder="Content"></textarea><br>
   <?php
-    require ('../db-credentials');
+    require ('../db-credentials.php');
 
     $qry = $db -> prepare('SELECT topics.id, topics.name FROM topics;');
   $qry -> execute();
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
 
   foreach ($results as $row) {
-    echo ('<input type="checkbox" name="topics" id="' . row['id'] . '">' . row['name']);
+    echo ('<input type="checkbox" name="topics" id="' . row['id'] . '">' . row['name']) . '<br>';
   }
   ?>
-  <input type="checkbox" name="topic" id="">
-
+  <input type="submit" value="Submit">
   </form>
 </body>
 </html>
