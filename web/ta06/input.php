@@ -14,7 +14,9 @@
 
   foreach ($topics as $key => $topic_id) {
     $qry_insert_topic
-        = $db -> prepare('INSERT INTO scriptures_to_topics (scripture_id, topics_id) VALUES (:scripture_id, :topic_id);');
+        = $db -> prepare('INSERT INTO scriptures_to_topics(scripture_id, topics_id) VALUES (:scripture_id, :topic_id);');
     $qry_insert_topic -> execute([':scripture_id' => $scripture_id,
                                   ':topic_id'     => $topic_id]);
   }
+
+  header('location: scripture.php');
