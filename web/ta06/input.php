@@ -8,7 +8,10 @@
   require '../db-credentials.php';
 
   $qry_insert_scripture = $db -> prepare('INSERT INTO scriptures(book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content);');
-  $qry_insert_scripture -> execute();
+  $qry_insert_scripture -> execute([':book' => $book,
+                                    ':chapter' => $chapter,
+                                    ':verse' => $verse,
+                                    ':content'=> $content]);
 
   $scripture_id = $db->lastInsertId('scriptures_id_seq');
 
