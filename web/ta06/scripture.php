@@ -22,7 +22,7 @@
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
 
   foreach ($results as $row) {
-    echo ('<input type="checkbox" name="topics" id="' . $row['id'] . '">' . $row['name']. '<br>');
+    echo ('<input type="checkbox" name="topics[]" id="' . $row['id'] . '">' . $row['name']. '<br>');
   }
   ?>
   <input type="submit" value="Submit">
