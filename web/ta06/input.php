@@ -14,7 +14,7 @@
   echo '<br>';
   echo $topics_ids;
   echo '<br>';
-  foreach ($_POST['Topics'] as $key => $value) {
+  foreach ($_POST['topics'] as $key => $value) {
     echo $key . ':' . $value . '<br>';
   }
   echo $_POST['topics'];
