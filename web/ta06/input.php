@@ -22,4 +22,4 @@
                                   ':topic_id'     => $topic_id]);
   }
 
-  header('location: scripture.php');
+  header('location: scriptures.php');
