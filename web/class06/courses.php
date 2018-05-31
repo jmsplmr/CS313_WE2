@@ -29,7 +29,7 @@
       $name = $course['name'];
       $number = $course['number'];
 
-      echo '<li>$number - $name</li>';
+      echo "<li>$number - $name</li>";
     }
   ?>
 </body>
