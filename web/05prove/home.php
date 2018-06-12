@@ -14,8 +14,8 @@
 <body>
 <?php
   include "nav.php";
-  if (isset($_COOKIE["name"])) {
-    echo "<h1>Name:" . $_COOKIE['name'] . " </h1>";
+  if (isset($_SESSION["name"])) {
+    echo "<h1>Name:" . $_SESSION['name'] . " </h1>";
   }
 ?>
 </body>

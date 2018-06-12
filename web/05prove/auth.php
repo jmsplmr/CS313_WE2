@@ -14,6 +14,8 @@
     $results = $qry->fetch(PDO::FETCH_ASSOC);
 
     $name = $results[$user_id]['fullname'];
-    setcookie("name", $name,time() + (86400 * 30), "/");
-    echo $name;
+    $_SESSION['name'] = $name;
+
+    $email = $results[$user_id]['email'];
+    $_SESSION['email'] = $email;
   }
