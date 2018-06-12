@@ -26,8 +26,8 @@
   $insert->bindValue(":format", $format, PDO::PARAM_INT);
   $insert->bindValue(":score", $score, PDO::PARAM_INT);
   $insert->bindValue(":date", $date, PDO::PARAM_INT);
-  //$insert->execute();
+  $insert -> execute();
 
-//  header('location: rounds.php');
-//  die();
+  header('location: rounds.php');
+  die();
 
