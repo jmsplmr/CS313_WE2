@@ -13,7 +13,7 @@
     $qry->execute();
     $results = $qry->fetch(PDO::FETCH_ASSOC);
 
-    $name = $results[$user_id]['fullname'];
+    $name = $results[0]['fullname'];
     $_SESSION['name'] = $name;
     echo $name;
 
