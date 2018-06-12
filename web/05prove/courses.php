@@ -33,7 +33,7 @@
   <h2>Add a Course</h2>
   <form method="post" action="add_course.php">
     <label for="name">Name: </label>
-    <input type="text" name="Name" id="name" placeholder="Disc Golf Course" required><br>
+    <input type="text" name="name" id="name" placeholder="Disc Golf Course" required><br>
     <label for="phone">Phone #: </label>
     <input type="text" name="phone" id="phone" placeholder="555-444-3333"><br>
     <label for="contact">Contact: </label>
