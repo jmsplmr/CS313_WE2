@@ -31,6 +31,25 @@
   <script src="login.js"></script>
 </head>
 <body>
+<div>
+  <form method="post" action="add_course.php">
+    <label for="name">Name: </label>
+    <input type="text" name="Name" id="name" placeholder="Disc Golf Course" required>
+    <label for="phone">Phone #: </label>
+    <input type="text" name="phone" id="phone" placeholder="555-444-3333">
+    <label for="contact">Contact: </label>
+    <input type="text" name="contact" id="contact" placeholder="Responsible Party">
+    <label for="address">Address: </label>
+    <input type="text" name="address" id="address" placeholder="# D Street Abr." required>
+    <label for="city">City: </label>
+    <input type="text" name="city" id="city" placeholder="Anywhere" required>
+    <label for="state">State: </label>
+    <input type="text" name="state" id="state" placeholder="ST" required>
+    <label for="zip">Zip: </label>
+    <input type="text" name="zip" id="zip" placeholder="55555" required>
+    <input type="submit">
+  </form>
+</div>
 <?php
   include 'nav.php';
   $details = get_course_detail($course_id);
@@ -47,5 +66,6 @@
   echo "<h2>$contact</h2>";
   echo "<h3>$street_address, $city $state, $zip </h3>";
 ?>
+
 </body>
 </html>
