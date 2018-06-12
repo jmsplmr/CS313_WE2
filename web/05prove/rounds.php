@@ -1,16 +1,15 @@
 <?php
   session_start();
 
-  if (!S_SESSION['auth']) {
-    header('location: login.php');
-    die();
-  }
+  require_once 'auth_guard.php';
 ?>
 <!DOCTYPE html>
 <?php
   session_start();
   include 'auth.php';
   include 'get_rounds.php';
+  include 'get_course.php';
+  include 'get_game_types.php';
 ?>
 <html>
 <head>
@@ -24,9 +23,33 @@
 <body>
 <?php
   include 'nav.php';
-    echo "<form>
-            
-          </form>";
+  $courses    = $_SESSION['courses[]'];
+  $game_types = $_SESSION['game_types[]'];
+
+  echo "<form><div><input type='date' required></div>
+          <div><label for='course'>Course</label>
+          <select name='course' required>";
+    foreach ($courses as $row) {
+      $id   = $row['id'];
+      $name = $row['name'];
+      $city = $row['city'];
+      $st   = $row['state'];
+
+      echo "<option value='$id'>$name, $city, $st</option>";
+    }
+    echo "</select></div>";
+    echo "<div>";
+    foreach ($game_types as $row){
+      $id = $row['id'];
+      $name = $row['name'];
+
+      echo "<input type='radio' id='type$id' name='game_type' value='$id'>";
+      echo "<label for='type$id'>$name</label>";
+    }
+    echo "</div>";
+    echo "<div><input type='number' required name='score' id='score' placeholder='100'>
+          <label for='score'>Score:</label> </div>";
+    echo "<input type='submit'></form>";
 
     echo "<h1>Your rounds of disc golf.</h1>";
   if (isset($_SESSION['user_rounds[]'])) {
@@ -53,8 +76,7 @@
               </tr>";
       }
       echo '</table>';
-    }
-    else {
+    } else {
       echo '<h2>Currently you have no recorded rounds. You should add some.</h2>';
     }
     echo '<a href="rounds.php">Add a round of disc golf.</a>';
