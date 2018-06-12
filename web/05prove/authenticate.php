@@ -8,8 +8,9 @@
   $qry = $db -> prepare('SELECT users.id, users.username FROM users WHERE username=:user AND pswdhash = crypt(:pswd, pswdhash);');
   $qry -> execute([':user' => $user, ':pswd' => $pswd]);
   $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
-  session_start();
+
   if ($results) {
+    session_start();
     $_SESSION['user'] = $results[0]['id'];
     header('Location: home.php');
   }

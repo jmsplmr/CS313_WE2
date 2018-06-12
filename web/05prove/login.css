@@ -1,5 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+nav {
+  width: 100%;
+  background-color: goldenrod;
+  padding: 10px;
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+a {
+  color: lightgray;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover:not(.active) {
+  background-color: black;
+}
+
+a:hover.active {
+  background-color: darkred;
+}
+
 .login-page {
   width: 360px;
   padding: 8% 0 0;

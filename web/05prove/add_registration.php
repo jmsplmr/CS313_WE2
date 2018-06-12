@@ -21,9 +21,6 @@
 
     header('Location: login.php');
   }
-  //  $qry = $db -> prepare('SELECT id, book, chapter, verse FROM Scriptures WHERE book=:book');
-  //  $qry -> execute([':book' => $book, ]);
-  //  $results = $qry -> fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html>
 <head>
