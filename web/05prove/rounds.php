@@ -23,13 +23,17 @@
 <body>
 <?php
   include 'nav.php';
-  $courses    = $_SESSION['courses[]'];
-  $game_types = $_SESSION['game_types[]'];
+  $courses    = get_courses();
+  $game_types = get_game_types();
 
-  echo "<form><div><label for='name'>Date:</label>
-              <input type='date' name='date' id='name' required></div>
+  echo "<div><h1>My Rounds</h1></div>";
+
+  echo "<form action='add_round.php' method='post'>
+          <div><label for='name'>Date:</label>
+              <input type='date' name='date' id='name' required>
+          </div>
           <div><label for='course'>Course:</label>
-          <select name='course' required>";
+            <select name='course' required>";
     foreach ($courses as $row) {
       $id   = $row['id'];
       $name = $row['name'];
@@ -38,8 +42,10 @@
 
       echo "<option value='$id'>$name, $city, $st</option>";
     }
-    echo "</select></div>";
-    echo "<div><label for='game_type'>Game format:</label>";
+    echo "  </select>
+          </div>";
+    echo "<div>
+            <label for='game_type'>Game format:</label>";
     foreach ($game_types as $row){
       $id = $row['id'];
       $name = $row['name'];
@@ -48,13 +54,15 @@
       echo "<label for='type$id'>$name</label>";
     }
     echo "</div>";
-    echo "<div><label for='score'>Score:</label><input type='number' required name='score' id='score' placeholder='100'>
+    echo "<div>
+            <label for='score'>Score:</label>
+            <input type='number' required name='score' id='score' placeholder='100'>
           </div>";
     echo "<input type='submit'></form>";
 
     echo "<h1>Your rounds of disc golf.</h1>";
-  if (isset($_SESSION['user_rounds[]'])) {
-    $rounds = $_SESSION['user_rounds[]'];
+  $rounds = get_rounds();
+
     if (sizeof($rounds) > 0) {
       echo '<table class="rounds" id="rounds">';
       echo '<tr>
@@ -81,7 +89,7 @@
       echo '<h2>Currently you have no recorded rounds. You should add some.</h2>';
     }
     echo '<a href="rounds.php">Add a round of disc golf.</a>';
-  }
+
 
 ?>
 </body>
