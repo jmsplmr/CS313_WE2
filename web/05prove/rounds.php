@@ -27,7 +27,7 @@
   $game_types = get_game_types();
 
   echo "<div><h1>My Rounds</h1></div>";
-
+  echo "<div><h2>Add round:</h2>";
   echo "<form action='add_round.php' method='post'>
           <div><label for='name'>Date:</label>
               <input type='date' name='date' id='name' required>
@@ -59,8 +59,8 @@
             <input type='number' required name='score' id='score' placeholder='100'>
           </div>";
     echo "<input type='submit'></form>";
-
-    echo "<h1>Your rounds of disc golf.</h1>";
+    echo "</div>"
+    echo "<h1>Your rounds of disc golf.</h1><div>";
   $rounds = get_rounds();
 
     if (sizeof($rounds) > 0) {
@@ -84,7 +84,7 @@
                 <td>$score</td>
               </tr>";
       }
-      echo '</table>';
+      echo '</table></div>';
     } else {
       echo '<h2>Currently you have no recorded rounds. You should add some.</h2>';
     }
