@@ -14,6 +14,6 @@
     $results = $qry->fetch(PDO::FETCH_ASSOC);
 
     $name = $results[$user_id]['fullname'];
-    setcookie("name", $name);
+    setcookie("name", $name,time() + (86400 * 30), "/");
     echo $name;
   }
