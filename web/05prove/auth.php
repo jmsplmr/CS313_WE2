@@ -14,6 +14,6 @@
     $results = $qry->fetch(PDO::FETCH_ASSOC);
 
     $name = $results[$user_id]['fullname'];
-    $_COOKIE['name'] = $name;
+    setcookie("name", $name);
     echo $name;
   }
