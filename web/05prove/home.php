@@ -16,7 +16,8 @@
 <?php
   include 'nav.php';
   if (isset($_SESSION['name'])) {
-    echo "<h1>Name:" . $_SESSION['name'] . " </h1>";
+    $name = $_SESSION['name'];
+    echo "<h1>Name:" . $name . " </h1>";
   }
   if (isset($_SESSION['user'])) {
     echo "<h1>User" . $_SESSION['user'] . "</h1>";
