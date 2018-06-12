@@ -12,6 +12,7 @@
   if ($results) {
     session_start();
     $_SESSION['user'] = $results[0]['id'];
+    $_SESSION['auth'] = TRUE;
     header('Location: home.php');
   }
 ?>
