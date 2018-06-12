@@ -59,7 +59,7 @@
             <input type='number' required name='score' id='score' placeholder='100'>
           </div>";
     echo "<input type='submit'></form>";
-    echo "</div>"
+    echo "</div>";
     echo "<h1>Your rounds of disc golf.</h1><div>";
   $rounds = get_rounds();
 
