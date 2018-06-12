@@ -1,7 +1,6 @@
 <?php
-  session_start();
-
   if ($_SESSION["auth"]) {
+    session_start();
     require_once "../dbConnect.php";
 
     $db = get_db();
@@ -13,11 +12,12 @@
     $qry->execute();
     $results = $qry->fetch(PDO::FETCH_ASSOC);
     echo $results;
+
     $name = $results[0]['fullname'];
     $_SESSION['name'] = $name;
     echo $name;
 
-    $email = $results[$user_id]['email'];
+    $email = $results[0]['email'];
     $_SESSION['email'] = $email;
     echo $email;
   }
