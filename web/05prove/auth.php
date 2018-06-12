@@ -1,7 +1,9 @@
 <?php
   if ($_SESSION["auth"]) {
-    session_start();
+
     require_once "../dbConnect.php";
+    
+    echo session_status();
 
     $db = get_db();
 
