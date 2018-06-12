@@ -1,12 +1,11 @@
 <?php
   session_start();
 
-  if (!isset(S_SESSION['auth'])) {
+  if (!S_SESSION['auth']) {
     header('location: login.php');
     die();
   }
 ?>
-
 <!DOCTYPE html>
 <?php
   session_start();
