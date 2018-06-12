@@ -88,9 +88,6 @@
     } else {
       echo '<h2>Currently you have no recorded rounds. You should add some.</h2>';
     }
-    echo '<a href="rounds.php">Add a round of disc golf.</a>';
-
-
 ?>
 </body>
 </html>
