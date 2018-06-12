@@ -1,8 +1,17 @@
+<?php
+  session_start();
+
+  if (!isset(S_SESSION['auth'])) {
+    header('location: login.php');
+    die();
+  }
+?>
+
 <!DOCTYPE html>
 <?php
   session_start();
   include 'auth.php';
-  include 'status.php';
+  include 'get_rounds.php';
 ?>
 <html>
 <head>
@@ -16,10 +25,11 @@
 <body>
 <?php
   include 'nav.php';
-  if (isset($_SESSION['name'])) {
-    $name = $_SESSION['name'];
-    echo "<h1>Welcome " . $name . "!</h1>";
-  }
+    echo "<form>
+            
+          </form>";
+
+    echo "<h1>Your rounds of disc golf.</h1>";
   if (isset($_SESSION['user_rounds[]'])) {
     $rounds = $_SESSION['user_rounds[]'];
     if (sizeof($rounds) > 0) {
@@ -54,3 +64,4 @@
 ?>
 </body>
 </html>
+
