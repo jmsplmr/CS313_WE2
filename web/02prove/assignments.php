@@ -22,7 +22,7 @@
         <li class="assignment"><a href="">04 Prove: TBD</a></li>
         <li class="assignment"><a href="">05 Prove: TBD</a></li>
         <li class="assignment"><a href="">06 Prove: TBD</a></li>
-        <li class="assignment"><a href="">07 Prove: TBD</a></li>
+        <li class="assignment"><a href="../05prove/login.php">07 Prove: Project</a></li>
         <li class="assignment"><a href="">08 Prove: TBD</a></li>
         <li class="assignment"><a href="">09 Prove: TBD</a></li>
         <li class="assignment"><a href="">10 Prove: TBD</a></li>
