@@ -46,6 +46,8 @@
     <input type="text" name="state" id="state" placeholder="ST" required><br>
     <label for="zip">Zip: </label>
     <input type="text" name="zip" id="zip" placeholder="55555" required><br>
+    <label for="rating">Rating: (0-10) </label>
+    <input type="number" min="0" max="10" placeholder="5" name="rating" id="rating" required><br>
     <input type="submit">
   </form>
 </div>

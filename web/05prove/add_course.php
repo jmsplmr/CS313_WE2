@@ -7,15 +7,20 @@
    */
   require_once '../dbConnect.php';
 
+  session_start();
+
   $db = get_db();
 
-  $name    = $_POST['name'];
-  $phone   = $_POST['phone'];
-  $contact = $_POST['contact'];
-  $address = $_POST['address'];
-  $city    = $_POST['city'];
-  $state   = $_POST['state'];
-  $zip     = $_POST['zip'];
+  $user = $_SESSION['user'];
+
+  $name    = htmlspecialchars($_POST['name']);
+  $phone   = htmlspecialchars($_POST['phone']);
+  $contact = htmlspecialchars($_POST['contact']);
+  $address = htmlspecialchars($_POST['address']);
+  $city    = htmlspecialchars($_POST['city']);
+  $state   = htmlspecialchars($_POST['state']);
+  $zip     = htmlspecialchars($_POST['zip']);
+  $rating  = htmlspecialchars($_POST['rating']);
 
   $stmt = 'INSERT INTO courses (name, street_address, city, state, zip, phone, contact) VALUES (:name, :address, :city, :state, :zip, :phone, :contact);';
 
@@ -30,6 +35,16 @@
   $insert->bindParam(":contact", $contact, PDO::PARAM_STR);
 
   $insert->execute();
+
+  $course_id = $db -> lastInsertId (['course_id_seq']);
+
+  $stmt_rating = 'INSERT INTO course_rating(user_id,course_id,rating) VALUES (:user, :course, :rating);';
+
+  $create_rating = $db->prepare($stmt_rating);
+  $create_rating->bindParam(":user", $user, PDO::PARAM_STR);
+  $create_rating->bindParam(":course", $course_id, PDO::PARAM_STR);
+  $create_rating->bindParam(":rating", $rating, PDO::PARAM_INT);
+  $create_rating->execute();
 
   header('location: courses.php');
   die();
