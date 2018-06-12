@@ -10,9 +10,22 @@
 
   $db = get_db();
 
-  echo $_POST['date'];
-  echo $_POST['course'];
-  echo $_POST['format'];
-  echo $_POST['score'];
+  $date = $_POST['date'];
+  $course = $_POST['course'];
+  $format = $_POST['format'];
+  $score = $_POST['score'];
+  $user = $_SESSION['user'];
 
-  //$insert = $db->prepare();
+  $stmt = 'INSERT INTO rounds(course_id, user_id, format_id, score, date) VALUES (:course, :user, :format, :score, :date);';
+
+  $insert = $db->prepare($stmt);
+  $insert->bindValue(":course", $course, PDO::PARAM_INT);
+  $insert->bindValue(":user", $user, PDO::PARAM_INT);
+  $insert->bindValue(":format", $format, PDO::PARAM_INT);
+  $insert->bindValue(":score", $score, PDO::PARAM_INT);
+  $insert->bindValue(":date", $date, PDO::PARAM_INT);
+  $insert->execute();
+
+  header('location: rounds.php');
+  die();
+
