@@ -9,6 +9,9 @@
   <script src="login.js"></script>
 </head>
 <body>
+<?php
+  include "nav.php";
+?>
 <div class="login-page">
   <div class="form">
 
