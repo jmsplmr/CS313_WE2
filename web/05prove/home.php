@@ -17,6 +17,12 @@
   if (isset($_SESSION['name'])) {
     echo "<h1>Name:" . $_SESSION['name'] . " </h1>";
   }
+  if (isset($_SESSION['user'])) {
+    echo "<h1>User" . $_SESSION['user'] . "</h1>";
+  }
+  if (isset($_SESSION['auth'])) {
+    echo "<h1>auth:" . $_SESSION['auth'] . " </h1>";
+  }
 ?>
 </body>
 </html>
