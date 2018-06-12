@@ -14,7 +14,7 @@
 <body>
 <?php
   include "nav.php";
-  echo "<h1>Name: $name</h1>"
+  echo "<h1>Name:" . $_COOKIE['name'] . " </h1>"
 ?>
 </body>
 </html>
