@@ -20,8 +20,8 @@
     $name = $_SESSION['name'];
     echo "<h1>Welcome " . $name . "!</h1>";
   }
-  if (isset($_SESSION['user_rounds[]'])) {
-    $rounds = $_SESSION['user_rounds[]'];
+
+    $rounds = get_rounds();
     if (sizeof($rounds) > 0) {
       echo '<table class="rounds" id="rounds">';
       echo '<tr>
@@ -49,7 +49,6 @@
       echo '<h2>Currently you have no recorded rounds. You should add some.</h2>';
     }
     echo '<a href="rounds.php">Add a round of disc golf.</a>';
-  }
 
 ?>
 </body>
