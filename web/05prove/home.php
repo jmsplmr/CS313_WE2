@@ -12,8 +12,11 @@
   <script src="login.js"></script>
 </head>
 <body>
+<?php
+  include "nav.php";
+?>
   <?php
-  
+
   ?>
 </body>
 </html>

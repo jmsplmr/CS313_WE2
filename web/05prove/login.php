@@ -12,6 +12,9 @@
 </head>
 
 <body>
+<?php
+  include "nav.php";
+?>
 <div class="login-page">
   <div class="form">
     <form class="login-form" action="authenticate.php" method="post">
