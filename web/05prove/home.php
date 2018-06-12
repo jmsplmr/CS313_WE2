@@ -2,6 +2,7 @@
 <?php
   session_start();
   include 'auth.php';
+  include 'status.php';
 ?>
 <html>
 <head>
@@ -17,15 +18,34 @@
   include 'nav.php';
   if (isset($_SESSION['name'])) {
     $name = $_SESSION['name'];
-    echo $name;
-    echo "<h1>Name:" . $name . " </h1>";
+    echo "<h1>Welcome " . $name . " </h1>";
   }
-  if (isset($_SESSION['user'])) {
-    echo "<h1>User" . $_SESSION['user'] . "</h1>";
+  if (isset($_SESSION['user_rounds[]'])) {
+    $rounds = $_SESSION['user_rounds[]'];
+
+    echo '<table class="rounds" id="rounds">';
+      echo '<tr>
+              <th>Date</th>
+              <th>Course</th>
+              <th>Type</th>
+              <th>Score</th>
+            </tr>';
+      foreach ($rounds as $row){
+        $score = $row['score'];
+        $date = $row['date'];
+        $format = $row['format'];
+        $course = $row['course'];
+
+        echo "<tr>
+                <td>$date</td>
+                <td>$course</td>
+                <td>$format</td>
+                <td>$score</td>
+              </tr>";
+      }
+    echo '</table>';
   }
-  if (isset($_SESSION['auth'])) {
-    echo "<h1>auth:" . $_SESSION['auth'] . " </h1>";
-  }
+
 ?>
 </body>
 </html>
