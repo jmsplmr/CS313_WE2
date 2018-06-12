@@ -26,8 +26,9 @@
   $courses    = $_SESSION['courses[]'];
   $game_types = $_SESSION['game_types[]'];
 
-  echo "<form><div><input type='date' required></div>
-          <div><label for='course'>Course</label>
+  echo "<form><div><label for='name'>Date:</label>
+              <input type='date' name='date' id='name' required></div>
+          <div><label for='course'>Course:</label>
           <select name='course' required>";
     foreach ($courses as $row) {
       $id   = $row['id'];
@@ -38,7 +39,7 @@
       echo "<option value='$id'>$name, $city, $st</option>";
     }
     echo "</select></div>";
-    echo "<div>";
+    echo "<div><label for='game_type'>Game format:</label>";
     foreach ($game_types as $row){
       $id = $row['id'];
       $name = $row['name'];
@@ -47,8 +48,8 @@
       echo "<label for='type$id'>$name</label>";
     }
     echo "</div>";
-    echo "<div><input type='number' required name='score' id='score' placeholder='100'>
-          <label for='score'>Score:</label> </div>";
+    echo "<div><label for='score'>Score:</label><input type='number' required name='score' id='score' placeholder='100'>
+          </div>";
     echo "<input type='submit'></form>";
 
     echo "<h1>Your rounds of disc golf.</h1>";
