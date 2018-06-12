@@ -13,8 +13,8 @@
 </head>
 <body>
 <?php
-  include "nav.php";
-  if (isset($_SESSION["name"])) {
+  include 'nav.php';
+  if (isset($_SESSION['name'])) {
     echo "<h1>Name:" . $_SESSION['name'] . " </h1>";
   }
 ?>

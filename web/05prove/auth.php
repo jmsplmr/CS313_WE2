@@ -15,7 +15,9 @@
 
     $name = $results[$user_id]['fullname'];
     $_SESSION['name'] = $name;
+    echo $name;
 
     $email = $results[$user_id]['email'];
     $_SESSION['email'] = $email;
+    echo $email;
   }
