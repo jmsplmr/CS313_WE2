@@ -32,6 +32,7 @@
 </head>
 <body>
 <?php
+  include 'nav.php';
   $details = get_course_detail($course_id);
   $name = $details['name'];
   $street_address = $details['street_address'];
