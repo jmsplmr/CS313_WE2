@@ -23,4 +23,28 @@ courses
     return $courses;
   }
 
+  /**
+   * @param $course
+   *
+   * @return array
+   */
+  function get_course_detail ($course)
+  : array {
+    require_once '../dbConnect.php';
+    session_start();
+
+    $db = get_db();
+
+    $stmt = 'SELECT name, street_address, city, state, zip, phone, contact FROM courses WHERE id = :id;';
+
+    $qry_details = $db -> prepare($stmt);
+    $qry_details -> bindParam(":id", $course, PDO::PARAM_INT);
+    $qry_details -> execute();
+    $details = $qry_details -> fetch();
+
+    return $details;
+  }
+
+  ;
+
 
