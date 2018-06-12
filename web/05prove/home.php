@@ -14,9 +14,7 @@
 <body>
 <?php
   include "nav.php";
+  echo "<h1>Name: $name</h1>"
 ?>
-  <?php
-
-  ?>
 </body>
 </html>
