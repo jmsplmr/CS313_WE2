@@ -5,7 +5,7 @@
    * Date: 12-Jun-18
    * Time: 11:26 AM
    */
-  ``
+
   session_start();
   require_once '../dbConnect.php';
 
