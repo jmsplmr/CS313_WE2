@@ -13,7 +13,7 @@
 
   $date = $_POST['date'];
   $course = $_POST['course'];
-  $format = $_POST['format'];
+  $format = $_POST['game_type'];
   echo $format;
   $score = $_POST['score'];
   $user = $_SESSION['user'];
