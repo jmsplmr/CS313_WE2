@@ -13,7 +13,7 @@
 
     $stmt
         = 'SELECT name, street_address AS address, city, state, rating FROM courses INNER JOIN course_rating rating2 on courses
-.id = rating2.course_id INNER JOIN users u on rating2.user_id = :id;';
+.id = rating2.course_id WHERE rating2.user_id = :id;';
 
     $qry_courses = $db -> prepare($stmt);
     $qry_courses -> bindValue(":id", $user, PDO::PARAM_STR);
