@@ -23,7 +23,7 @@
       <input type="hidden" name="registered" id="registered" value="registered"/>
       <input type="submit" value="Create">
       <p class="message">Already registered?
-        <a href="#">Sign In</a>
+        <a href="login.php">Sign In</a>
       </p>
     </form>
   </div>
