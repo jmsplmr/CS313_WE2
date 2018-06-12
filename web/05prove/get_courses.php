@@ -12,7 +12,8 @@
     $user = $_SESSION['user'];
 
     $stmt
-        = 'SELECT name, street_address AS address, city, state, rating FROM courses INNER JOIN course_rating rating2 on courses
+        = 'SELECT courses.id, name, street_address AS address, city, state, rating FROM courses INNER JOIN course_rating rating2 on 
+courses
 .id = rating2.course_id WHERE rating2.user_id = :id;';
 
     $qry_courses = $db -> prepare($stmt);

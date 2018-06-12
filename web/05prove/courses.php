@@ -39,6 +39,7 @@
               <th>Rating</th>
             </tr>';
     foreach ($course_rating as $row) {
+      $id = $row['id'];
       $name    = $row['name'];
       $address = $row['address'];
       $city    = $row['city'];
@@ -46,7 +47,7 @@
       $rating  = $row['rating'];
 
       echo "<tr>
-                <td>$name</td>
+                <td><a href='course_info.php?id=$id'>$name</a></td>
                 <td>$address, $city, $state</td>
                 <td>$rating</td>
               </tr>";
