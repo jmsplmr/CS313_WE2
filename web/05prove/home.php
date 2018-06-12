@@ -2,8 +2,8 @@
 <?php
   session_start();
   if ($_SESSION["auth"]) {
-    require "../db-credentials.php";
-
+    require "../dbConnect.php";
+    $db = get_db();
     $user_id = $_SESSION["user"];
 
     $qry = $db->prepare("SELECT fullname, email FROM users WHERE id=:id;");
