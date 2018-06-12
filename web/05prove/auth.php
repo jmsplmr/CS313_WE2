@@ -12,7 +12,7 @@
     $qry->bindValue(":id", $user_id, PDO::PARAM_INT);
     $qry->execute();
     $results = $qry->fetch(PDO::FETCH_ASSOC);
-
+    echo $results;
     $name = $results[0]['fullname'];
     $_SESSION['name'] = $name;
     echo $name;
