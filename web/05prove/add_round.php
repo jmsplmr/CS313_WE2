@@ -10,3 +10,9 @@
 
   $db = get_db();
 
+  echo $_POST['date'];
+  echo $_POST['course'];
+  echo $_POST['format'];
+  echo $_POST['score'];
+
+  //$insert = $db->prepare();
