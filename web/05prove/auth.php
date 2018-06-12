@@ -11,10 +11,10 @@
     $qry->bindValue(":id", $user_id, PDO::PARAM_INT);
     $qry->execute();
     $results = $qry->fetch();
-    echo $results[0];
-    $name = $results[0]['fullname'];
+    
+    $name = $results['fullname'];
     $_SESSION['name'] = $name;
 
-    $email = $results[0]['email'];
+    $email = $results['email'];
     $_SESSION['email'] = $email;
   }
